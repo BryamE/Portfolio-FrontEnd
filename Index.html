@@ -5,19 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/a07dcaf70c.js" crossorigin="anonymous"></script>
     <title>Proyecto Final</title>
 
 </head>
 
 <body>
     <header>
+        <nav class="navbar navbar-expand-lg bg-light">
 
-        <nav>
+            <div class="container-fluid">
 
+                <a>
+                    <img src="/assets/IMGs/arg-programa.png" alt="ArgProg" height="50">
+                </a>
+                <a class="navbar-brand" href="#">#ArgentinaPrograma</a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+
+
+                    <ul class="navbar-nav d-flex">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Redes Sociales
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#instagram"><i class="fa-brands fa-instagram"></i>
+                                        Instagram</a></li>
+                                <li><a class="dropdown-item" href="#LinkedIn"><i class="fa-brands fa-linkedin"></i>
+                                        LinkedIn</a></li>
+                                <li><a class="dropdown-item" href="#GitHub"><i class="fa-brands fa-github"></i>
+                                        GitHub</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Log In
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión Para Editar</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput">Correo Electronico</label>
+                                          </div>
+                                          <div class="form-floating">
+                                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                            <label for="floatingPassword">Contraseña</label>
+                                          </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                      </form>
+                                    <!--
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
+                                    -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </nav>
-        
+        </div>
+        </div>
+
         <div class="banner">
 
         </div>
@@ -25,7 +108,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
