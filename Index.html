@@ -16,38 +16,39 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
-
             <div class="container-fluid">
-                <div>
-                    <a><img src="/assets/IMGs/arg-programa.png" href="https://argentinaprograma.inti.gob.ar"
-                            alt="ArgProg" height="50"></a>
-                    <a class="navbar-brand"><strong>#YoProgramo</strong></a>
-                </div>
-                <div></div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    </ul>
-                    <ul class="navbar-nav d-flex">
+                <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar">
+                    <img src="/assets/IMGs/arg-programa.png" alt="ArgProg"
+                        height="60px" class="d-inline-block align-text-center">
+                    <strong>#YoProgramo</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="espacio" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Redes Sociales</a>
+                            
+                            <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Redes Sociales
+                              </a>
 
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="https://www.instagram.com/bryam_cesar_/"><i
+                                <li><a class="dropdown-item" href="https://www.instagram.com/bryam_cesar_/" target="_blank"><i
                                             class="fa-brands fa-instagram"></i>
                                         Instagram</a></li>
                                 <li><a class="dropdown-item"
-                                        href="https://www.linkedin.com/in/bryam-cesar-692612235/"><i
+                                        href="https://www.linkedin.com/in/bryam-cesar-692612235/" target="_blank"><i
                                             class="fa-brands fa-linkedin"></i>
                                         LinkedIn</a></li>
-                                <li><a class="dropdown-item" href="https://github.com/GalixB"><i
+                                <li><a class="dropdown-item" href="https://github.com/GalixB" target="_blank"><i
                                             class="fa-brands fa-github"></i>
                                         GitHub</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
                                 Log In
@@ -56,51 +57,103 @@
                     </ul>
                 </div>
             </div>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión Para Editar</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </nav>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión Para Editar</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Correo Electronico</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Contraseña</label>
+                            </div>
+                            <div class="mb-3 form-check" style="padding-top: 5px;">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                            </div>
+
                         </div>
-                        <form>
-                            <div class="modal-body">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!--Banner y Foto de Perfil-->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/IMGs/banner.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="/assets/IMGs/Elmo.jpg" id="perfil" class="img-fluid rounded-circle img-thumbnail"
+                alt="Foto de perfil" width="10%">
+            <h1>Hard & Soft Skills</h1><br>
+        </div>
+    </header>
 
 
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">Correo Electronico</label>
-                                </div>
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="floatingPassword"
-                                        placeholder="Password">
-                                    <label for="floatingPassword">Contraseña</label>
-                                </div>
-                                <div class="mb-3 form-check" style="padding-top: 5px;">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
-                                </div>
 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </div>
-                        </form>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <i class="fa-brands fa-html5 card-img-top logos"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
-        </nav>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <i class="fa-brands fa-java card-img-top logos"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <i class="fa-solid fa-language card-img-top logos"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-
-        <div class="banner">
-
-        </div>
-    </header>
+    </div>
 
 
 

@@ -1,3 +1,31 @@
-#espacios{
+#espacio{
+    padding: 5px;
+}
+
+#perfil{
+    position: absolute;
+    margin-top: -5%;
+    margin-bottom: 20%;
+    left: 2%;
+}
+.banner{
+    width: 100%;
+}
+
+.img-banner{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+header{
+    padding-bottom: 15%;
+}
+
+.logos{
+    font-size: 50px;
+}
+
+.nav-item{
     padding: 5px;
 }
